@@ -18,7 +18,7 @@ a {
   background-color: #333;
   color: white;
   height: 3rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   display: flex;
   align-items: center;
 }
@@ -31,21 +31,90 @@ a {
 
 .feedback {
   padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.feedback-title {
+  padding-bottom: 1rem;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+
+  > h1 {
+    font-size: 1.75em;
+    font-weight: 700;
+  }
+}
+
 .feedback .form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.form .form-body {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form .form-group label {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.form .form-group input {
+  padding: 0.5rem;
+  border: 1px solid #333;
+}
+
+.form .form-group textarea {
+  padding: 0.5rem;
+  border: 1px solid #333;
+}
+
+.feedback_height {
+  height: 4rem;
+}
+
+.submit_btn {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .footer {
   padding: 0.5rem 1rem;
   background-color: #333;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.footer .copyright {
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 0.8em;
+}
+
+.footer .copyright {
   text-align: center;
+  font-size: 0.5em;
   line-height: 1px;
   letter-spacing: 1px;
   padding: 0.5rem;
